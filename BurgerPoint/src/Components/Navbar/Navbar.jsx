@@ -11,7 +11,7 @@ function Navbar() {
     //   <Link to="/Login">Login</Link>
     //   <Link to="/Profile">Ptofile</Link>
     // </nav>
-    <div className="fixed z-50 w-full h-20 max-w-lg -translate-x-1/2 bg-white border border-yellow-400 rounded-full bottom-4 left-1/2 dark:bg-gray-700 dark:border-gray-600 shadow-md">
+    <div className="fixed z-50 w-full h-20 max-w-lg -translate-x-1/2 bg-white border border-yellow-400 rounded-full bottom-4 left-1/2 dark:bg-white-700 dark:border-purple-600 shadow-md">
       <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
         
         {/* Menu Page */}
