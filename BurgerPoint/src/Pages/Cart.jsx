@@ -70,7 +70,7 @@ import { IconPlus,IconMinus } from '@tabler/icons-react';
 
 
 const Cart = () => {
-const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } = useContext(CartContext)
+const { cartItems, addToCart, removeFromCart,removeItem, clearCart, getCartTotal } = useContext(CartContext)
 
 const totalPrice = cartItems.reduce(
   (acc, item) => acc + item.price * item.quantity,
@@ -90,7 +90,7 @@ const totalPrice = cartItems.reduce(
             <div className="col-span-12 lg:col-span-10 w-full lg:pl-3">
               <div className="flex items-center justify-between w-full mb-4">
                 <h5 className="font-manrope font-bold text-2xl leading-9 text-gray-900">{item.name}</h5>
-                <button className="rounded-full group flex items-center justify-center focus:outline-red-500" onClick={() => {clearCart()}}>
+                <button className="rounded-full group flex items-center justify-center focus:outline-red-500" onClick={() => {removeItem(item)}}>
                 <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle className="fill-red-50 transition-all duration-500 group-hover:fill-red-400" cx="17" cy="17" r="17" />
                     <path className="stroke-red-500 transition-all duration-500 group-hover:stroke-white" strokeWidth="1.6" strokeLinecap="round" d="M14.167 13.6V12.592C14.167 11.897 14.731 11.333 15.427 11.333H18.575C19.27 11.333 19.834 11.897 19.834 12.592V13.6M19.834 13.6H12.467V18.889C12.467 20.669 12.467 21.56 13.021 22.113C13.574 22.666 14.464 22.666 16.245 22.666H17.756C19.537 22.666 20.428 22.666 20.981 22.113C21.534 21.56 21.534 20.669 21.534 18.889V13.6Z" stroke="#EF4444" />
@@ -126,7 +126,7 @@ const totalPrice = cartItems.reduce(
         </div>
         <div className="max-lg:max-w-lg max-lg:mx-auto text-center">
           <p className="font-normal text-base leading-7 text-gray-500 mb-5 mt-6">Shipping taxes, and discounts calculated at checkout</p>
-          <button className="rounded-full py-4 px-6 bg-yellow-400 text-white font-semibold text-lg w-full transition-all duration-500 hover:bg-yellow-700">Checkout</button>
+          <button className="rounded-full py-4 px-6 bg-yellow-400 text-white font-semibold text-lg w-full transition-all duration-500 hover:bg-yellow-600">Checkout</button>
         </div>
       </div>
     </section>

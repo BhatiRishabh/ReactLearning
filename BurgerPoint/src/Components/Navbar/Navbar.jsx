@@ -15,33 +15,33 @@ function Navbar() {
       <div className="grid h-full max-w-lg grid-cols-5 mx-auto">
         
         {/* Menu Page */}
-        <Link to="/menu" className="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <Link to="/menu" className="inline-flex flex-col items-center justify-center px-5 rounded-s-full hover:bg-gray-50 dark:hover:bg-gray-100 group">
         <IconToolsKitchen className='h-8 w-8'/>
           <span className="text-xs">Menu</span>
         </Link>
 
         {/* Cart Page */}
-        <Link to="/cart" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <Link to="/cart" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-100 group">
           <IconPaperBag className='h-8 w-8 hover:yellow-400'/>
           <span className="text-xs">Cart</span>
         </Link>
 
         {/* Add New Item Button (Optional) */}
-        <Link to="/" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <Link to="/" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-100 group">
         
         <IconBurger stroke={2} className='h-12 w-12'/>
         <span className="text-xs">Home</span>
         </Link>
 
         {/* Offers Page */}
-        <Link to="/offers" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <Link to="/offers" className="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-100 group">
         <IconRosetteDiscount className='w-8 h-8'/>
           <span className="text-xs">Offers</span>
         </Link>
         
 
         {/* Profile Page */}
-        <Link to="/profile" className="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-800 group">
+        <Link to="/profile" className="inline-flex flex-col items-center justify-center px-5 rounded-e-full hover:bg-gray-50 dark:hover:bg-gray-100 group">
           <IconUserCircle className="h-8 w-8"/>
           <span className="text-xs">Profile</span>
         </Link>

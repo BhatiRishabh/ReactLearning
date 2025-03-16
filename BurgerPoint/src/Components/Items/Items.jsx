@@ -15,7 +15,7 @@ function Items({item}) {
 			<h3 className="text-3xl font-semibold tracking-wide">{item.price}</h3>
 			<p className="dark:text-gray-800">{item.description}</p>
 		</div>
-		<button onClick={() => handleAddToCart(item)} type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-700 bg-yellow-400 text-gray-50 hover:bg-yellow-500 hover:text-white">Add to Cart</button>
+		<button onClick={() => handleAddToCart(item)} type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-700 bg-yellow-400 text-gray-50 hover:bg-yellow-500 hover:text-white cursor-pointer">Add to Cart</button>
 	</div>
 </div>
   )
