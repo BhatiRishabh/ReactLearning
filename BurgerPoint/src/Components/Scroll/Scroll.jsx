@@ -13,13 +13,12 @@ const foodItems = [
   { name: "Rolls", image: "https://cdn-icons-png.flaticon.com/512/791/791571.png" },
 ];
 
+
 const FoodScroll = () => {
     return (
         <div className="w-full p-4 flex flex-col items-center">
           
           <FlipText className="text-4xl text-black-600 font-serif">Categories</FlipText>
-    
-          {/* Scrollable Container */}
           <div className="w-full overflow-x-auto">
             <div className="flex gap-6 px-4 py-2 whitespace-nowrap">
               {foodItems.map((item, index) => (
@@ -27,13 +26,12 @@ const FoodScroll = () => {
                   key={index} 
                   className="min-w-[180px] flex flex-col items-center bg-white rounded-lg shadow-md p-3 hover:cursor-active"
                 >
-                  {/* Image with Fixed Size */}
+
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-[150px] h-[150px] object-cover rounded-lg"
                   />
-                  {/* Food Name */}
                   <p className="text-center mt-2 font-semibold">{item.name}</p>
                 </div>
               ))}

@@ -108,7 +108,7 @@ const totalPrice = cartItems.reduce(
                   <IconPlus stroke={2} />
                   </button>
                   <p type="text" className="border border-gray-200 rounded-full w-10 text-center text-gray-900 font-semibold text-sm py-1.5 px-3 bg-gray-100" >{item.quantity}</p>
-                  <button className="group rounded-full border border-gray-200 p-2.5 bg-white transition-all duration-500 hover:bg-gray-50 hover:border-gray-300">
+                  <button className="group rounded-full border border-gray-200 p-2.5 bg-white transition-all duration-500 hover:bg-gray-50 hover:border-gray-300" onClick={() => {removeFromCart(item)}}>
                   <IconMinus stroke={2} />
                   </button>
                 </div>
