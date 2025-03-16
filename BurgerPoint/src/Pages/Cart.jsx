@@ -85,7 +85,7 @@ const totalPrice = cartItems.reduce(
         {cartItems.map(item => (
           <div key={item.id} className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2">
-              <img src={item.image} alt={item.name} className="max-lg:w-full lg:w-[180px] rounded-lg object-cover" />
+              <img src={item.img} alt={item.name} class="w-full lg:w-[180px] h-auto rounded-lg object-contain"/>
             </div>
             <div className="col-span-12 lg:col-span-10 w-full lg:pl-3">
               <div className="flex items-center justify-between w-full mb-4">
@@ -112,7 +112,7 @@ const totalPrice = cartItems.reduce(
                   <IconMinus stroke={2} />
                   </button>
                 </div>
-                <h6 className="text-yellow-400 font-manrope font-bold text-2xl leading-9 text-right">${item.price}</h6>
+                <h6 className="text-yellow-400 font-manrope font-bold text-2xl leading-9 text-right">${item.quantity*item.price}</h6>
               </div>
             </div>
           </div>
