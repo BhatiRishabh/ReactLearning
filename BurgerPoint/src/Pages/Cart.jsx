@@ -76,12 +76,14 @@ const totalPrice = cartItems.reduce(
   (acc, item) => acc + item.price * item.quantity,
   0
 );
+
   return (
     <section className="py-24 relative">
       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-6 mx-auto">
         <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black">
           Shopping Cart
         </h2>
+        
         {cartItems.map(item => (
           <div key={item.id} className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2">

@@ -68,50 +68,57 @@ const [rolls] = useState([
   // For now, just display them
   return (
     <div className="max-w mx-auto p-10">
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Burger Menu</h1>
+      <img src='https://cdn-icons-png.flaticon.com/512/1046/1046784.png' alt='burger' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Burger Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {burgers.map((burger) => (
           <Item key={burger.id} item={burger} />
         ))}
     </div>
-
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Pizza Menu</h1>
+    <img src='https://static.vecteezy.com/system/resources/previews/009/521/752/non_2x/colorful-icon-of-pizza-isolated-on-white-background-vector.jpg' alt='Pizza' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Pizza Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {pizzas.map((pizza) => (
           <Item key={pizza.id} item={pizza} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Fries Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/5787/5787018.png' alt='Fries' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Fries Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {fries.map((fries) => (
           <Item key={fries.id} item={fries} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">HotDogs Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/3480/3480814.png' alt='Hotdogs' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">HotDogs Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {hotDogs.map((hotDog) => (
           <Item key={hotDog.id} item={hotDog} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Tacos Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/1046/1046759.png' alt='Tacos' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Tacos Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {tacos.map((taco) => (
           <Item key={taco.id} item={taco} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">sandwiches Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/4553/4553331.png' alt='Sandwiches' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">sandwiches Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {sandwiches.map((sandwiche) => (
           <Item key={sandwiche.id} item={sandwiche} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Noodles Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/4465/4465494.png' alt='Noodles' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Noodles Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {noodles.map((noodle) => (
           <Item key={noodle.id} item={noodle} />
         ))}
     </div>
-    <h1 className="text-3xl font-bold text-center stroke:color-yellow">Rolls Menu</h1>
+    <img src='https://cdn-icons-png.flaticon.com/512/791/791571.png' alt='Rolls' className='w-20 h-20 mx-auto'/>
+    <h1 className="text-2xl font-bold text-center stroke:color-yellow">Rolls Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {rolls.map((roll) => (
           <Item key={roll.id} item={roll} />
