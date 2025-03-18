@@ -1,6 +1,7 @@
 // src/pages/Offers.jsx
 
 import React from 'react';
+import { IconRosetteDiscount } from '@tabler/icons-react';
 
 function Offers() {
   // You could fetch these offers from an API in a real-world scenario
@@ -26,9 +27,16 @@ function Offers() {
   ];
 
   return (
-    <div style={{ padding: '1rem' }}>
-      <h2>Special Offers</h2>
-      <p>Grab these deals before they’re gone!</p>
+    <div className="py-24 relative">
+       <div className="w-full max-w-7xl px-4 md:px-5 lg:px-6 mx-auto">
+        <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black">
+          Offers
+        </h2>
+        <IconRosetteDiscount stroke={1.5} className='h-50 w-50'/>
+       <h2 className="title font-manrope font-bold text-2xl leading-10 mb-8 text-center text-black">
+       Check whats bests for you!
+     </h2>
+     </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
         {offers.map((offer) => (
           <div 

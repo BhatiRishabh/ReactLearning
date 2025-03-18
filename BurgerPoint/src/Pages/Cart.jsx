@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../Context/CartContext';
-import { IconPlus,IconMinus } from '@tabler/icons-react';
+import { IconPlus,IconMinus, IconShoppingCartCancel } from '@tabler/icons-react';
 
 // function Cart() {
 //   const { cartItems, addToCart, removeFromCart, clearCart, getCartTotal } = useContext(CartContext)
@@ -83,8 +83,14 @@ const totalPrice = cartItems.reduce(
         <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black">
           Shopping Cart
         </h2>
-        
-        {cartItems.map(item => (
+       
+      {cartItems.length === 0 ? (<div className="flex flex-col items-center justify-center gap-4">
+        <IconShoppingCartCancel stroke={1.5} className='h-50 w-50'/>
+       <h2 className="title font-manrope font-bold text-2xl leading-10 mb-8 text-center text-black">
+       Your cart is empty!
+     </h2>
+     </div>
+      ):cartItems.map(item => (
           <div key={item.id} className="rounded-3xl border-2 border-gray-200 p-4 lg:p-8 grid grid-cols-12 mb-8 max-lg:max-w-lg max-lg:mx-auto gap-y-4">
             <div className="col-span-12 lg:col-span-2">
               <img src={item.img} alt={item.name} class="w-full lg:w-[180px] h-auto rounded-lg object-contain"/>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { FlipText } from '../FlipText/FlipText';
+import { Link } from 'react-router';
 
 
 const foodItems = [
@@ -16,28 +17,29 @@ const foodItems = [
 
 const FoodScroll = () => {
     return (
-        <div className="w-full p-4 flex flex-col items-center">
-          
-          <FlipText className="text-4xl text-black-600 font-serif">Categories</FlipText>
-          <div className="w-full overflow-x-auto">
-            <div className="flex gap-6 px-4 py-2 whitespace-nowrap">
+      <div className="w-full p-4 flex flex-col items-center">
+      <FlipText className="text-3xl text-black-600 font-serif mb-4">Categories</FlipText>
+      <div className="w-full overflow-x-auto">
+          <div className="flex gap-6 px-4 py-2 whitespace-nowrap">
               {foodItems.map((item, index) => (
-                <div 
-                  key={index} 
-                  className="min-w-[180px] flex flex-col items-center bg-white rounded-lg shadow-md p-3 hover:cursor-active"
-                >
-
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-[150px] h-[150px] object-cover rounded-lg"
-                  />
-                  <p className="text-center mt-2 font-semibold">{item.name}</p>
-                </div>
+                <Link to={`/menu#${item.name}`}>
+                  <div 
+                      key={index} 
+                      className="min-w-[180px] flex flex-col items-center bg-white rounded-lg shadow-md p-3 h-30 w-20 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg cursor-pointer"
+                  >
+                      <img
+                          src={item.image}
+                          alt={item.name}
+                          className="w-[50px] h-[50px] object-cover rounded-lg"
+                      />
+                      <p className="text-center mt-2 font-semibold">{item.name}</p>
+                  </div>
+                  </Link>
               ))}
-            </div>
           </div>
-        </div>
+      </div>
+  </div>
+  
       );
 };
 
