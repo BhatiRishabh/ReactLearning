@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import { MantineProvider } from '@mantine/core';
 import { Navbar1 } from './Components/Navbar/Nabvar1';
 import Offers from './Pages/Offers';
+import Contact from './Pages/Contact';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/offers" element={<Offers />} />
+        <Route path="/offer" element={<Offers />} />
+        <Route path="/contact" element={<Contact />}
+         />
       </Routes>
       <Footer />
     </Router>
