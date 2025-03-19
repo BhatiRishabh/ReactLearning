@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 // If you installed a library for the IconRosetteDiscount import, adjust accordingly
 import { IconRosetteDiscount } from '@tabler/icons-react';
 
-function Offers() {
+function offers() {
   const [copiedOfferId, setCopiedOfferId] = useState(null);
 
   // Example offers array (could be replaced with API data)
@@ -80,4 +80,4 @@ function Offers() {
   );
 }
 
-export default Offers;
+export default offers;
