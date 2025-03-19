@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 
+
 const EmailForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -12,9 +13,9 @@ const EmailForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+    const serviceId = 'service_1jr8p9r';
+    const templateId = 'template_erxkaxz';
+    const publicKey = '_3a69brkOjcT9kCS4';
 
     const templateParams = {
       from_name: name,
@@ -22,7 +23,6 @@ const EmailForm = () => {
       phone: phone,
       to_name: 'Bhati Ji',
       message: message,
-      name: "Rishabh",
       email: "rishabhbhati831@gmail.com",
     };
 
