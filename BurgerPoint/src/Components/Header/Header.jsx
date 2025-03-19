@@ -13,7 +13,7 @@ function Header() {
                 </a>
             </li>
             <li className="flex transition-transform duration-300 ease-in-out hover:translate-y-[-5px] hover:scale-105 hover:shadow-[0_0_15px_5px_#facc15] dark:hover:shadow-[0_0_15px_5px_#a855f7] rounded-lg">
-                <a rel="noopener noreferrer" href="offers" className="flex-vertical items-center px-4 border-b-2 dark:border- p-3">
+                <a rel="noopener noreferrer" href="/offers" className="flex-vertical items-center px-4 border-b-2 dark:border- p-3">
                     <IconRosetteDiscount className='w-10'/>Offers
                 </a>
             </li>
@@ -37,7 +37,7 @@ function Header() {
                 </a>
             </li>
             <li className="flex transition-transform duration-300 ease-in-out hover:translate-y-[-5px] hover:scale-105 hover:shadow-[0_0_15px_5px_#facc15] dark:hover:shadow-[0_0_15px_5px_#a855f7] rounded-lg">
-                <a rel="noopener noreferrer" href="offers" className="flex-vertical items-center px-4 border-b-2 dark:border- p-3">
+                <a rel="noopener noreferrer" href="/offers" className="flex-vertical items-center px-4 border-b-2 dark:border- p-3">
                     <IconRosetteDiscount className='w-10'/>Offers
                 </a>
             </li>
