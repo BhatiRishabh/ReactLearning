@@ -8,7 +8,7 @@ import Cart from './Pages/Cart';
 import Header from './Components/Header/Header';
 import { MantineProvider } from '@mantine/core';
 import { Navbar1 } from './Components/Navbar/Nabvar1';
-import Offers from './Pages/Offers';
+import offers from './Pages/Offers';
 import Contact from './Pages/Contact';
 
 function App() {
