@@ -44,8 +44,8 @@ function Offers() {
         <h2 className="title font-manrope font-bold text-4xl leading-10 mb-8 text-center text-black">
           Offers
         </h2>
-        {/* Make sure IconRosetteDiscount is properly imported from your icon library */}
-        <IconRosetteDiscount stroke={1.5} className="mx-auto mb-4 h-20 w-20" />
+
+            <IconRosetteDiscount stroke={1.5}  className="mx-auto mb-4 h-20 w-20" />
         <h2 className="title font-manrope font-bold text-2xl leading-10 mb-8 text-center text-black">
           Check what’s best for you!
         </h2>
@@ -61,22 +61,22 @@ function Offers() {
             <h3 className="text-xl font-semibold mb-2">{offer.title}</h3>
             <p className="text-gray-600 mb-4">{offer.description}</p>
 
-            {offer.code && (
-              <div className="flex items-center gap-3">
-                <p className="font-bold mb-0">Code: {offer.code}</p>
-                <button
-                  onClick={() => handleCopyCode(offer.code, offer.id)}
+              {offer.code && (
+                 <div className="flex items-center gap-3">
+                   <p className="font-bold mb-0">Code: {offer.code}</p>
+                 <button
+                      onClick={() => handleCopyCode(offer.code, offer.id)}
                   className="bg-yellow-400 hover:bg-yellow-500 dark:bg-purple-600 dark:hover:bg-purple-700 text-white font-semibold
                              px-3 py-1 rounded focus:outline-none"
                 >
                   {copiedOfferId === offer.id ? 'Copied!' : 'Copy Code'}
-                </button>
-              </div>
+                 </button>
+                </div>
             )}
-          </div>
+             </div>
         ))}
       </div>
-    </div>
+      </div>
   );
 }
 

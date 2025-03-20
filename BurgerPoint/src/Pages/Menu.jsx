@@ -76,7 +76,6 @@ useEffect(() => {
   
   ;
 
-  // For now, just display them
   return (
     <div className="max-w mx-auto p-10">
       <div id="Burger">
@@ -92,7 +91,7 @@ useEffect(() => {
     <img src='https://static.vecteezy.com/system/resources/previews/009/521/752/non_2x/colorful-icon-of-pizza-isolated-on-white-background-vector.jpg' alt='Pizza' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">Pizza Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {Pizzas.map((pizza) => (
+         {Pizzas.map((pizza)=>(
           <Item key={pizza.id} item={pizza} />
         ))}
     </div>
@@ -101,7 +100,7 @@ useEffect(() => {
     <img src='https://cdn-icons-png.flaticon.com/512/5787/5787018.png' alt='Fries' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">Fries Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {Fries.map((fries) => (
+        {Fries.map((fries) =>(
           <Item key={fries.id} item={fries} />
         ))}
     </div>
@@ -110,7 +109,7 @@ useEffect(() => {
     <img src='https://cdn-icons-png.flaticon.com/512/3480/3480814.png' alt='Hotdogs' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">HotDogs Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {HotDogs.map((hotDog) => (
+        {HotDogs.map((hotDog) =>(
           <Item key={hotDog.id} item={hotDog} />
         ))}
     </div>
@@ -119,8 +118,9 @@ useEffect(() => {
     <img src='https://cdn-icons-png.flaticon.com/512/1046/1046759.png' alt='Tacos' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">Tacos Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {Tacos.map((taco) => (
-          <Item key={taco.id} item={taco} />
+        {Tacos.map((taco) =>(
+
+            <Item key={taco.id} item={taco} />
         ))}
     </div>
     </div>
@@ -138,7 +138,7 @@ useEffect(() => {
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">Noodles Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
         {Noodles.map((noodle) => (
-          <Item key={noodle.id} item={noodle} />
+              <Item key={noodle.id} item={noodle} />
         ))}
     </div>
     </div>
@@ -146,11 +146,11 @@ useEffect(() => {
     <img src='https://cdn-icons-png.flaticon.com/512/791/791571.png' alt='Rolls' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">Rolls Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {Rolls.map((roll) => (
-          <Item key={roll.id} item={roll} />
+          {Rolls.map((roll) => (
+              <Item key={roll.id} item={roll} />
         ))}
-    </div>
-    </div>
+      </div>
+      </div>
     </div>
   );
 }

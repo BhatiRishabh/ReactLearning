@@ -115,8 +115,11 @@ const EmailForm = () => {
         </div>
 
         <button
-          type="submit"
-          disabled={isSubmitting}
+
+            type="submit"
+
+            disabled={isSubmitting}
+
           className={`w-full text-white ${isSubmitting ? 'bg-yellow-500 dark:bg-purple-500' : 'bg-yellow-400 hover:bg-yellow-500 dark:bg-purple-400 dark:hover:bg-purple-500'} font-medium rounded-lg text-sm px-5 py-2.5 text-center`}
         >
           {isSubmitting ? 'Sending...' : 'Send Email'}
