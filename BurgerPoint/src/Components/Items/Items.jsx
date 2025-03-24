@@ -1,13 +1,15 @@
 import React, { createContext, useState, useContext } from 'react'
 import { CartContext } from '../../Context/CartContext';
+import SlideInNotifications from '../Notification/Notification';
 
 function Items({item}) {
   const { addToCart } = useContext(CartContext);
   const handleAddToCart = () => {
     addToCart(item);
+	<SlideInNotifications/>
   };
   return (
-    <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 mb-5 mt-5">
+    <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 mb-5 mt-5 hover:scale-[1.015] hover:shadow-xl hover:shadow-[0_0_15px_5px_#facc15] dark:hover:shadow-[0_0_10px_5px_#a855f7]">
 	<img src={item.img} alt="" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
 	<div className="flex flex-col justify-between p-6 space-y-8">
 		<div className="space-y-2">
