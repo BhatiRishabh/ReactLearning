@@ -4,9 +4,17 @@ import SlideInNotifications from '../Notification/Notification';
 
 function Items({item}) {
   const { addToCart } = useContext(CartContext);
+  const [notifications, setNotifications] = useState([]);
   const handleAddToCart = () => {
     addToCart(item);
-	<SlideInNotifications/>
+	setNotifications((prev) => [
+		{ id: Date.now(), text: `${item.name} added to cart` },
+		...prev,
+	  ]);
+	};
+  
+	const removeNotif = (id) => {
+	  setNotifications((prev) => prev.filter((n) => n.id !== id));
   };
   return (
     <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 mb-5 mt-5 hover:scale-[1.015] hover:shadow-xl hover:shadow-[0_0_15px_5px_#facc15] dark:hover:shadow-[0_0_10px_5px_#a855f7]">
@@ -19,6 +27,16 @@ function Items({item}) {
 		</div>
 		<button onClick={() => handleAddToCart(item)} type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-700 bg-yellow-400 text-gray-50 hover:bg-yellow-500 hover:text-white cursor-pointer">Add to Cart</button>
 	</div>
+
+	<div className="fixed top-2 right-2 z-50 pointer-events-none">
+        {notifications.map((notif) => (
+          <SlideInNotifications
+            key={notif.id}
+            notifications={notifications}
+            setNotifications={setNotifications}
+          />
+        ))}
+      </div>
 </div>
   )
 }
