@@ -7,7 +7,7 @@ const foodItems = [
   { name: "Burger", image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png" },
   { name: "Pizza", image: "https://static.vecteezy.com/system/resources/previews/009/521/752/non_2x/colorful-icon-of-pizza-isolated-on-white-background-vector.jpg" },
   { name: "Fries", image: "https://cdn-icons-png.flaticon.com/512/5787/5787018.png" },
-  { name: "Hot Dog", image: "https://cdn-icons-png.flaticon.com/512/3480/3480814.png" },
+  { name: "Hotdogs", image: "https://cdn-icons-png.flaticon.com/512/3480/3480814.png" },
   { name: "Tacos", image: "https://cdn-icons-png.flaticon.com/512/1046/1046759.png" },
   { name: "Sandwich", image: "https://cdn-icons-png.flaticon.com/512/4553/4553331.png" },
   { name: "Noodles", image: "https://cdn-icons-png.flaticon.com/512/4465/4465494.png" },
