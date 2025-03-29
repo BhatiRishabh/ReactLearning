@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconBurger,IconPaperBag,IconToolsKitchen, IconRosetteDiscount } from '@tabler/icons-react';
+import { link } from 'framer-motion/client';
 function Header() {
   return (
 	<header className="p-10 dark:bg-gray-100 dark:text-gray-800">

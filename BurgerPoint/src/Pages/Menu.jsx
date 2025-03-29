@@ -28,12 +28,12 @@ const [Fries] = useState([
     { id: 5, name: 'Sweet Potato Fries', price: 5.99, description: 'A healthier crispy delight.', img: 'https://www.cubesnjuliennes.com/wp-content/uploads/2021/01/Baked-Sweet-Potato-Fries-Recipe.jpg' }
 ]);
 
-const [HotDogs] = useState([
+const [Hotdogs] = useState([
     { id: 1, name: 'Classic Hot Dog', price: 4.99, description: 'Simple and delicious.', img: 'https://stpierrebakery-co-uk.s3.eu-west-1.amazonaws.com/app/uploads/2022/05/Classic-Hot-Dog-Rolls-1440x960.jpg' },
     { id: 2, name: 'Cheese Hot Dog', price: 5.99, description: 'Cheesy goodness.', img: 'https://www.simplyrecipes.com/thmb/PcSmQ7D3w_0acCdEiEIrslvtVak=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2018__10__EYF-Baked-Cheesy-Hot-METHOD-4-555a8033f8704211ab5307aa930c8807.jpg' },
     { id: 3, name: 'Chili Hot Dog', price: 6.49, description: 'Spicy and flavorful.', img: 'https://www.theendlessmeal.com/wp-content/uploads/2021/06/Chili-Dogs.jpg' },
     { id: 4, name: 'BBQ Bacon Hot Dog', price: 7.49, description: 'Smoky BBQ twist.', img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt_XehSMT5bTl0pW-R2PFND2rE8kVrejrgPg&s' },
-    { id: 5, name: 'Jalapeño Hot Dog', price: 6.99, description: 'For the spice lovers!', img: 'https://i0.wp.com/portandfin.com/wp-content/uploads/2014/04/BaconJalapenoHotDogs2.jpg' }
+    { id: 5, name: 'Jalapeño Hot Dog', price: 6.99, description: 'For the spice lovers!', img: 'https://domesticate-me.com/wp-content/uploads/2018/07/Grilled-Hot-Dogs-with-Peach-Jalapen%CC%83o-Salsa-2-500x500.jpg' }
 ]);
 
 const [Tacos] = useState([
@@ -105,11 +105,11 @@ useEffect(() => {
         ))}
     </div>
     </div>
-    <div id="HotDog">
+    <div id="Hotdogs">
     <img src='https://cdn-icons-png.flaticon.com/512/3480/3480814.png' alt='Hotdogs' className='w-20 h-20 mx-auto'/>
     <h1 className="text-2xl font-bold text-center stroke:color-yellow">HotDogs Menu</h1>
     <div className='grid grid-cols-1 sm:grid-cols-4 gap-2 '>
-        {HotDogs.map((hotDog) =>(
+        {Hotdogs.map((hotDog) =>(
           <Item key={hotDog.id} item={hotDog} />
         ))}
     </div>
